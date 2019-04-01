@@ -1,0 +1,9 @@
+We have installed antd that provide material themes. It has layouts to use
+Using axios we can make get or post request
+componentDidMount() - This is called everytime we mount this component
+We will need cors-headers for making request to the server
+otherwise axios cannot get request from the server
+read installation steps for setting up corsheaders
+We install react-router-dom for navigation between webpages
+routes.js has all our routes
+Link allow to navigate better like a tag
