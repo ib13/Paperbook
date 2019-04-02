@@ -1,3 +1,4 @@
+Part 1
 We have installed antd that provide material themes. It has layouts to use
 Using axios we can make get or post request
 componentDidMount() - This is called everytime we mount this component
@@ -7,3 +8,9 @@ read installation steps for setting up corsheaders
 We install react-router-dom for navigation between webpages
 routes.js has all our routes
 Link allow to navigate better like a tag
+
+Part 2
+Instead of writing different types of view we can use viewset to use everything as one
+event.preventDefault(); is used so that form donot refresh on submit itself
+requestType can be either post or put
+if parameters not written then default is null
