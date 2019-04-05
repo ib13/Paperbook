@@ -14,3 +14,29 @@ Instead of writing different types of view we can use viewset to use everything 
 event.preventDefault(); is used so that form donot refresh on submit itself
 requestType can be either post or put
 if parameters not written then default is null
+
+Part 3
+Here we store a token in browser's local storage and check if token is present then logged in else logged out
+store is used to maintain state for entire app
+it consist of actions and reducers
+action contain what should take place
+when working with actions we always include action type
+reducer based on the action takes the present state and return new state
+in auth we import actionTypes in which a function is executed depending on action type.
+every method returns a object having type attribute
+We donot store token,expirationDate in store as we donot need this to refresh or reload every time a state changes
+in utility.js we have oldObject and updatedProperties and with we replace the keys in oldObject with updated keys in updatedProperties
+reducer takes in the state and action and return updated state
+updateObject takes state,{} (properties we want to update)
+loading is done till authentication is done
+
+we define actions, actions are executed with dispatch, they return an object which contain type with other fields
+when that action is dispatched it is recieved in the reducer as parameters
+it looks at which method to execute depending on the action and that method returns a new state
+redux-thunk is a middleware
+we use createStore for creating store
+we use Provider to wrap our app component and mention store
+to connect our app with the state we use connect
+it will grab the store we created and allow us to access the state
+mapStateToProps maps state to props so that we can pass them through html tags
+...props will pass the state converted as props to CustomLayout

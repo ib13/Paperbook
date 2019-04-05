@@ -5,6 +5,18 @@ import axios from "axios";
 const FormItem = Form.Item;
 
 class CustomForm extends React.Component {
+  //   handleFormFill = requestType => {
+  //     switch (requestType) {
+  //       case "put":
+  //         // console.log(this.props.title1);
+  //         return this.props.title1;
+  //         break;
+
+  //       default:
+  //         return null;
+  //         break;
+  //     }
+  //   };
   handleFormSubmit = (event, requestType, articleID) => {
     // event.preventDefault();
     const title = event.target.elements.title.value;
@@ -48,7 +60,11 @@ class CustomForm extends React.Component {
           }
         >
           <Form.Item label="Title">
-            <Input name="title" placeholder="Put a title Here" />
+            <Input
+              name="title"
+              placeholder="Put a title Here"
+              // value={this.handleFormFill(this.props.requestType)}
+            />
           </Form.Item>
           <Form.Item label="Content">
             <Input name="content" placeholder="Enter some content..." />

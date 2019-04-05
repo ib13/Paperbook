@@ -9,6 +9,7 @@ class ArticleList extends React.Component {
   state = {
     articles: []
   };
+
   componentDidMount() {
     // This is called everytime we mount this component
     axios.get("http://localhost:8000/api/").then(res => {
