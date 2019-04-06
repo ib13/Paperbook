@@ -40,3 +40,7 @@ to connect our app with the state we use connect
 it will grab the store we created and allow us to access the state
 mapStateToProps maps state to props so that we can pass them through html tags
 ...props will pass the state converted as props to CustomLayout
+
+------
+backend:
+rest-auth takes your login method and convert them to api 
